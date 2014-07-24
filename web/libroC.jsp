@@ -55,7 +55,8 @@
       <div class="container">
         <div class="jumbotron">
         <div>        
-<form class="form-horizontal" action="Libro" method="post">
+                                                          <!-- para acentos, eñes, etc-->
+<form class="form-horizontal" action="Libro" method="post" accept-charset="ISO-8859-1">
     <input type="hidden" name="action" value="create" /> <!-- para añadir el parametro action=create -->
 
 <fieldset>

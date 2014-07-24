@@ -39,20 +39,7 @@ public class Pruebas extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         boolean activo="0".equals("1")?true:false;
-        System.out.println("== "+activo);
-        /*String q="select es.activo AS escribeActivo, au.* from escribe es "
-                + " INNER JOIN autor au ON es.libro_id = 2 "
-                + " AND es.autor_id = au.autor_id AND es.activo=1;";
-        System.out.println(q);
-        System.out.println(DbConnection.getConnection());
-        ResultSet rs = Executes.consultar(DbConnection.getConnection(), q);
-        try {
-            while(rs.next()){
-                System.out.println("activo= "+rs.getString("escribeActivo"));
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(Pruebas.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+        System.out.println("== "+activo);    
         
     }
 
